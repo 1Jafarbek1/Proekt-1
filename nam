@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #191919;
+}
+
+ul {
+    list-style: none;
+    color: #191919;
+}
+
+a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    height: 789px;
+    padding: 42px 0;
+    background-image: url('/assets/icons/back-lines.svg'), url('/assets/images/head-back.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 28%, contain;
+    background-position-x: 86%, 85%;
+    background-position-y: 120px, 0;
+}
+
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 32px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-left ul {
+    display: flex;
+    column-gap: 32px;
+    font-weight: 700;
+}
+
+.header__menu-right ul {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+}
+
+.header__menu-icon--user-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.header__menu-icon {
+    width: 24px;
+    height: 22.5px;
+}
+
+.header__body {
+    padding-top: 125px;
+    display: flex;
+}
+
+.header__body-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 543px;
+}
+.header__body-left h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+}
+.select-color {
+    margin-top: 24px;
+}
+
+.select-color p {
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.select-color ul {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 8px;
+}
+
+.color-select {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.color-select.active {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: silver;
+    top: 4px;
+    left: 3px;
+    margin-right: 12px
+}
+
+.color-select.active::after {
+    content: '';
+    position: absolute;
+    border: 2px solid silver;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    top: -6px;
+    left: -6px;
+}
