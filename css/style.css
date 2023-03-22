@@ -1,3 +1,5 @@
+/* Ja'far Samatov loyihasi */
+
 html {
     box-sizing: border-box;
 }
@@ -32,13 +34,17 @@ a {
 }
 
 .header {
-    height: 789px;
+    width: 1446px;
+    margin: 0 auto;
     padding: 42px 0;
-    background-image: url('/tools/images/back-line.svg'), url('/tools/images/background.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-size: 28%, contain;
-    background-position-x: 86%, 85%;
-    background-position-y: 120px, 0;
+    height: 700px;
+    background-image:
+        url("/tools/images/back-line.svg"), url("/tools/images/background.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 34%, contain;
+    background-position-x: 100%, 100%;
+    background-position-y: 120px, 0px;
+    position: relative;
 }
 
 .container {
@@ -179,6 +185,14 @@ a {
     color: aliceblue;
     font-size: 18px;
     font-weight: 700;
+    border: 3px solid black;
+}
+
+.price .button:hover {
+    transform: translateX(10px) translateY(10px);
+    transition: .5s;
+    background-color: #fff;
+    color: #000;
 }
 
 .dives-photos {
@@ -198,12 +212,17 @@ a {
     width: 200px;
 }
 
+.dives-image:hover {
+    transform: translateX(10px) translateY(-10px);
+    transition: .5s ease;
+}
+
 .dives-photos .left {
     width: 35px;
     height: 65px;
     position: relative;
     bottom: -60px;
-    right: 40px;
+    right: 10px;
 }
 
 .dives-photos .right {
@@ -211,7 +230,7 @@ a {
     height: 65px;
     position: relative;
     bottom: -60px;
-    left: 40px;
+    left: 10px;
 }
 
 .f-navbar {
@@ -293,12 +312,12 @@ a {
 
 .headphone-description__img__left .img-1 {
     position: relative;
-    left: -400px;
+    left: -100px;
 }
 
 .headphone-description__img__right .img-2 {
     position: relative;
-    right: -852px;
+    right: -652px;
 }
 
 .headphone-description__img__right .img-3 {
@@ -503,6 +522,12 @@ a {
     text-transform: uppercase;
 }
 
+.headphone-money__description button:hover {
+    transition: .7s;
+    background-color: #000;
+    color: #fff;
+}
+
 .headphones {
     display: flex;
     position: relative;
@@ -516,6 +541,14 @@ a {
     height: 495px;
     background-color: #fff;
     border-radius: 15px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 4px -2px black;
+}
+
+.headphones .btn:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
 
 .headphones .btn img {
@@ -574,7 +607,6 @@ a {
 
 .footer-right input {
     position: relative;
-    /* left: -50px; */
     width: 255px;
     height: 48px;
     padding: 0 20px;
@@ -592,6 +624,14 @@ a {
     background-color: #fff;
     border-radius: 35px;
     font-weight: 700;
+    border: none;
+}
+
+.footer-right button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateX(10px);
+    transition: .3s ease;
 }
 
 .footer .message {
@@ -607,7 +647,6 @@ a {
     top: 200px;
     width: 1899px;
     height: 120px;
-    /* padding: ;: 0 auto; */
 }
 
 .footer-menu a {
@@ -617,7 +656,7 @@ a {
     font-size: 18px;
     font-size: 700;
 }
- 
+
 .footer-menu a img {
     margin-right: 48px;
 }
@@ -626,3 +665,60 @@ a {
     width: 950px;
     margin: 50px auto;
 }
+
+/* Ja'far Samatov loyihasi */
+
+/* @media only screen and (max-width: 1300px) {
+    .header {
+        height: 589px;
+        padding: 42px 0;
+        background-image: url('/tools/images/back-line.svg'), url('/tools/images/background.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 48%, contain;
+        background-position-x: 70%, 95%;
+        background-position-y: 120px, 0;
+    }
+    
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    .header__logo {
+        margin-right: 32px;
+    }
+    
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header__menu-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__menu-left ul {
+        display: flex;
+        column-gap: 32px;
+        font-weight: 700;
+    }
+    
+    .header__menu-right ul {
+        display: flex;
+        column-gap: 22px;
+        align-items: center;
+    }
+    
+    .header__menu-icon--user-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3px;
+    }
+    
+    .header__menu-icon {
+        width: 24px;
+        height: 22.5px;
+    }
+} */
